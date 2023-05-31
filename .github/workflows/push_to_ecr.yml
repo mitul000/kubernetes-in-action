@@ -21,9 +21,9 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
       env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
+        AWS_ACCESS_KEY_ID: ${ASIARP3F5L44OXCZMTNQ}
+        AWS_SECRET_ACCESS_KEY: ${NzgbDWWHJrnNZt5W+w89fdFl3i6RTIaya+I70ZXa}
+        AWS_SESSION_TOKEN: ${FwoGZXIvYXdzEHEaDG/evw17u3K/u/laPCLGAd2euCQAH7LZHXnMZcqRpS5F3MjRWsVB2GqHKuEisM/7lk5it1vCGSW99PekTaULwzREPOJxti8Wj8T6Q116SKJbYpEi80QBc5m+NzhaCI5Vo/DgyztGaBKH2VBQYwlm3/xtehGFlNml7Bf9ceq8qdJ+Hs5x8KMOCXtu6nyMbmMeCgQlvJu/sJhiZug7vCZD+EwHAqXNCLfcQJ+nX/C7hhQrRtJJHM/Tr1OcwGD1WcW3j7BZx/N93GIl1SyPP3Dsw7MzRz9s3CjJndqjBjItccTGWdFZlys7tR+pTmym6LX96KEQN+pm+QWQCzh8JKvwiSaLsPYMO0WOG8kG}
         AWS_REGION: us-east-1
 
     - name: Build, test, tag, and push image to Amazon ECR
